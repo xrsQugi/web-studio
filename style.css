@@ -73,7 +73,7 @@ nav {
 .contacts{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .nav_menu a{
@@ -91,7 +91,11 @@ nav {
 }
 
 .contacts svg{
-    padding: 0px 10px 0px 0px;
+    margin-right: 10px;
+}
+
+.contacts li:nth-child(1){
+    margin-right: 30px;
 }
 
 .nav_menu a:hover, .contacts a:hover{
