@@ -322,25 +322,25 @@ nav {
     fill: aliceblue;
 }
 
-.member li:nth-child(1) svg{
+.member li svg:nth-child(1) {
     width: 20px;
     height: 20px;
     margin: 12px;
 }
 
-.member li:nth-child(2) svg{  
+.member li svg:nth-child(2){  
     width: 20px;
     height: 16px;
-    margin: 13px 12px;
+    margin: 14px 12px;
 }
 
-.member li:nth-child(3) svg{  
+.member li svg:nth-child(3){  
     width: 20px;
     height: 20px;
     margin: 12px;
 }
 
-.member li:nth-child(4) svg{
+.member li svg:nth-child(4){
     width: 20px;
     height: 20px;
     margin: 12px;
