@@ -1,0 +1,212 @@
+
+                            /* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* header */
+    .web{
+        color: #000;
+    }
+
+    .container{
+        justify-content: flex-start;
+    }
+
+    nav {
+        width: 50%;
+        margin: 0 89px;
+    }
+    .nav_menu {
+        margin-top: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .nav_menu li:not(:nth-child(3)){
+        margin-right: 56px;
+    }
+
+    .contacts{
+        flex-direction: column;
+        justify-content: flex-start;
+    } 
+
+    .contacts li{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .contacts .envelope{
+        margin: 0 8px 0 2px;
+        width: 14px;
+        height: 10px;
+    }
+    
+    .contacts .smartphone{
+        width: 10px;
+        height: 14px;
+    }
+    
+    .contacts li:nth-child(1){
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .contacts li:nth-child(2){
+        margin-right: 9px;
+    }
+    .contacts a{
+        font-size: 12px;
+        color: #757575;
+    }
+
+    /* main */
+    .hero {
+        height: 400px;
+        margin-bottom: 60px;
+    }
+    
+    .hero p{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 25px;
+        width: 307px;
+    }
+    
+    .hero button{
+        margin-top: 37px;
+    }
+    
+    .first_table{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 42px;
+    }
+    
+    .first_table tr{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .first_table td div{
+        width: 354px;
+        
+    }
+    
+    .first_table td{
+        width: 354px;
+        margin: 0 0 0 15px;
+    }
+    
+    .f_h2{
+        display: none;
+    }
+
+    .photo_ul{
+        display: none;
+    }
+
+    .team{
+        margin-top: 0;
+        padding-top: 66px;
+        
+    }
+    
+    .our_team{
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+    
+    .members{
+        display: flex;
+        justify-content: center;
+        margin: 0 1.5%;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .member{
+        width: 354px;
+        margin-bottom: 60px;
+    }
+
+    .member img{
+        width: 354px;
+    }
+
+    /* footer */
+    .clients {
+        padding: 65px 0 60px;
+        background: white;
+        height: 268px;
+    }
+
+    .clients h2{
+        font-size: 28px;
+        margin-bottom: 36px;
+    }
+
+    .clients ul{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .clients ul div{
+        width: 224px;
+        margin: 0 1.5%;
+    }
+
+    footer{
+        height: 463px;
+    }
+
+    .adress{
+        margin: 60px 178px 66px 89px;
+    }
+    
+    .adress ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .adress li:not(:nth-child(1)){
+        margin-top: 15px;
+    }
+    
+    .adress .email{
+        margin-left: 40px;
+    }
+    
+    .adress .tel{
+        margin-left: 40px;
+    }
+
+    .adress h2{
+        margin: 0 0 32px 36px;
+    }
+    
+    .media h4{
+        text-align: center;
+    }
+
+    .web_2{
+        color: #000;
+    }
+    
+    .studio_2{
+        color: #000;
+    }
+
+    .bottom_footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+
+}   
+                            /* SMARTPHONE */

@@ -1,0 +1,319 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+.page-header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC ;
+}
+
+.container{
+    width: 1600px;
+    margin: 0 auto;
+    padding: 35px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.web{
+    color:rgba(33, 150, 243, 1);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.studio{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+nav {
+    width: 20%;
+}
+.nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_2{
+    width: 35%;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_menu a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #212121;
+    transition: color .2s ease-in-out;
+}
+
+.contacts a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition: color .2s ease-in-out;
+}
+
+.contacts .envelope{
+    margin-right: 10px;
+    width:16px;
+    height: 12px;
+    fill: currentColor;
+}
+
+.contacts .smartphone{
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.contacts li:nth-child(1){
+    margin-right: 30px;
+}
+
+
+
+.nav_menu a:hover, .contacts a:hover, .nav_menu .page-portfolio{
+    color: #2196F3;
+}
+
+.charter{
+    margin: 94px 0 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.charter li:not(:last-child){
+    margin-right:8px;
+}
+
+.charter li div{
+    padding: 6px 23px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    transition: background-color .3s ease-in-out;
+}
+
+.charter a{
+    color:black;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    transition: color .3s ease-in-out;
+}
+
+.charter div:hover{
+    background-color: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.charter div:hover a{
+    color:#FFFFFF;
+}
+
+.table{
+    margin: 0 2% 94px;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product {
+    position: relative;
+    width: 370px;
+    height: 404px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.product:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.overflow{
+    width: 322px;
+    height: 168px;
+    padding: 63px 24px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    position: absolute;
+    bottom: 110px;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    font-family: 'Roboto';
+    transition: opacity .3s ease-in-out;
+}
+
+.product:hover .overflow{
+    opacity: 1;
+}
+
+.product h4{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+    margin: 20px 24px 4px;
+}
+
+.product p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0 24px 20px;
+}
+
+.bottom_footer{
+    background-color: #2F303A;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex;
+    height: 252px;
+}
+
+.adress
+{
+    margin: 60px 156px 60px 215px;
+}
+
+.adress li:not(:nth-child(1)){
+    margin-top: 9px;
+}
+
+.adress .email{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.adress .tel{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.adress .place{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.adress h2{
+    margin-bottom: 20px;
+}
+
+.web_2{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.studio_2{
+    font-family: 'Roboto';
+    font-weight:700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.media {
+    margin: 72px 0 100px;
+}
+
+.media ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.media h4{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.media ul div{ 
+    background: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color .4s ease-in-out;
+}
+
+.media li{
+    margin-right: 10px;
+}
+
+.media ul svg{
+    margin: 12px;
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+.media li svg:nth-child(3){
+    margin-left: 17px;
+}
+
+.media li div:hover{
+    background-color: #2196F3;
+}
+
