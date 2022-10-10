@@ -76,7 +76,7 @@
 
     .team{
         margin-top: 0;
-        padding-top: 66px;
+        padding: 66px 0 60px;
     }
     
     .our_team{
@@ -136,6 +136,7 @@
         width: 40%;
         margin: 0 79px;
     }
+
     .nav_menu {
         margin-top: 3px;
         display: flex;
@@ -230,8 +231,7 @@
 
     .team{
         margin-top: 0;
-        padding-top: 66px;
-        padding-bottom: 60px;
+        padding: 66px 0 60px;
     }
     
     .our_team{
@@ -336,11 +336,21 @@
         display: none;
     }
 
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .icon-menu{
         display: flex;
         fill: black;
         width: 24px;
         height: 16px;
+        transition: fill .2s ease-in-out;
+    }
+
+    .icon-menu:active{
+        fill:#2196F3;
     }
 
     .nav_2{
@@ -503,11 +513,26 @@
         display: none;
     }
 
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .icon-menu{
         display: flex;
         fill: black;
         width: 24px;
         height: 16px;
+        transition: fill .2s ease-in-out;
+    }
+
+    .icon-menu:active{
+        fill:#2196F3;
     }
 
     .nav_2{
