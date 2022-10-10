@@ -246,6 +246,7 @@
         margin: 0 1.5%;
         flex-wrap: wrap;
         gap: 30px;
+        padding-bottom: 0;
     }
     
     .member{
@@ -422,6 +423,7 @@
         margin: 0 1.5%;
         flex-wrap: wrap;
         gap: 30px;
+        padding-bottom: 0;
     }
     
     .member{
@@ -434,9 +436,8 @@
     }
     
     .clients {
-        padding: 65px 0 60px;
-        background: white;
-        height: 513px;
+        height: 393px;
+        padding: 60px 0;
     }
 
     .clients h2{
