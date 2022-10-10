@@ -33,7 +33,7 @@
         width: 224px;
     }
 }
-                            /* PC */
+
 @media screen and (min-width: 993px) and (max-width: 1148px){
     /* main */
     .hero {
@@ -372,6 +372,10 @@
         height: 400px;
     }
 
+    .hero button{
+        width: 200px;
+    }
+
     .hero p{
         font-size: 28px;
         line-height: 40px;
@@ -460,7 +464,7 @@
         width: 208px;
     }
 
-     /* footer */
+    /* footer */
     footer{
         height: 603px;
     }
@@ -561,7 +565,7 @@
     }
 
     .hero button{
-        width: 120px;
+        width: 150px;
     }
 
     .first_table{
@@ -637,8 +641,8 @@
         width: 105px;
     }
 
-     /* footer */
-     footer{
+    /* footer */
+    footer{
         height: 603px;
     }
 

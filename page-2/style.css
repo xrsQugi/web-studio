@@ -106,7 +106,9 @@ nav {
     margin-right: 30px;
 }
 
-
+.icon-menu{
+    display: none;
+}
 
 .nav_menu a:hover, .contacts a:hover, .nav_menu .page-portfolio{
     color: #2196F3;
@@ -116,10 +118,7 @@ nav {
     margin: 94px 0 50px;
     display: flex;
     justify-content: center;
-}
-
-.charter li:not(:last-child){
-    margin-right:8px;
+    gap: 8px;
 }
 
 .charter li div{
@@ -146,8 +145,8 @@ nav {
     color:#FFFFFF;
 }
 
-.table{
-    margin: 0 2% 94px;
+.table {
+    margin: 0 2% 60px;
     width: 96%;
     display: flex;
     flex-direction: row;
@@ -158,8 +157,8 @@ nav {
 
 .product {
     position: relative;
-    width: 370px;
-    height: 404px;
+    width: 368px;
+    height: 402px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     transition: box-shadow .3s ease-in-out;
@@ -210,16 +209,18 @@ nav {
     margin: 0 24px 20px;
 }
 
-.bottom_footer{
-    background-color: #2F303A;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex;
+footer{
+    background: #2F303A;
     height: 252px;
 }
 
-.adress
-{
+.top_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.adress{
     margin: 60px 156px 60px 215px;
 }
 
@@ -315,5 +316,77 @@ nav {
 
 .media li div:hover{
     background-color: #2196F3;
+}
+
+.bottom_footer{
+    display: none;
+}
+
+.bottom_footer h4{
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.d1 input{
+    width: 412px;
+    height: 16px;
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color:  rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 15px 16px;
+}
+
+input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.d1 button{
+    background-color: #2196F3;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 27%;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.d1 button:hover{
+    background-color: #FFFFFF;
+    color: #2196F3;
+}
+
+.d1 svg{
+    width: 24px;
+    height: 24px;
+    fill: #FFFFFF;
+    margin-left: 13px;
+    transition: fill .3s ease-in-out;
+}
+
+.d1 button:hover svg{
+    fill:#2196F3;
 }
 
