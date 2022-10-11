@@ -78,13 +78,13 @@
     .overflow{
         padding: 63px 24px;
         width: 304px;
-        height: 166px;
-        bottom: 110px;
+        height: 155px;
+        bottom: 121px;
     }
 
     .first-p:hover .overflow, .second-p:hover .overflow{
         opacity: 1;
-        bottom: 146px;
+        bottom: 157px;
     }
 
     .first-p{
@@ -97,7 +97,7 @@
 
     .product img{
         width: 352px;
-        height: 292px;
+        height: 281px;
     }
     
      /* footer */
@@ -207,7 +207,7 @@
         padding: 77px 24px;
         width: 400px;
         height: 140px;
-        bottom: 110px;
+        bottom: 109px;
     }
 
     .product img{

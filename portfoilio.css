@@ -169,7 +169,7 @@ nav {
 }
 
 .overflow{
-    width: 322px;
+    width: 321px;
     height: 168px;
     padding: 63px 24px;
     font-family: 'Roboto';
@@ -178,7 +178,7 @@ nav {
     line-height: 28px;
     color: #fff;
     position: absolute;
-    bottom: 110px;
+    bottom: 108px;
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
     font-family: 'Roboto';
