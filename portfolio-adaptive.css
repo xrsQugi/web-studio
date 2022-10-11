@@ -330,14 +330,14 @@
 
     .product img{
         width: 248px;
-        height: 162px;
+        height: 198px;
     }
 
     .overflow{
         padding: 10px 10px;
         width: 228px;
-        height: 142px;
-        bottom: 186px;
+        height: 178px;
+        bottom: 152px;
         font-size: 12px;
     }
 

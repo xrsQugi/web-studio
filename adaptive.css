@@ -324,6 +324,10 @@
         justify-content: center;
         align-items: center;
     }
+
+    .top_footer{
+        justify-content: center;
+    }
 }  
                             /* SMARTPHONE */
 @media screen and (min-width: 480px) and (max-width: 767px){
