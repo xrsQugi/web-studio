@@ -82,8 +82,7 @@
         bottom: 121px;
     }
 
-    .first-p:hover .overflow, .second-p:hover .overflow{
-        opacity: 1;
+    .over-1, .over-2{
         bottom: 157px;
     }
 
@@ -343,7 +342,7 @@
         padding: 10px 10px;
         width: 228px;
         height: 178px;
-        bottom: 152px;
+        bottom: 150px;
         font-size: 12px;
     }
 
