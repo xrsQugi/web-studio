@@ -1,24 +1,24 @@
                             /* PC */
 @media screen and (min-width: 1149px) and (max-width: 1200px){
-    .first_table td div{
+    /* .first_table td div{
         width: 250px;
     }
 
     .first_table td{
         width: 250px;
-    }
+    } */
 
-    .photo_ul{
+    /* .activity{
         flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 30px;
     }
 
-    .photo_ul img{
+    .activity img{
         width: 350px;
-    }
+    } */
 
-    .clients {
+    /* .clients {
         padding: 60px;
         background: white;
         height: 320px;
@@ -31,17 +31,17 @@
 
     .clients ul div{
         width: 224px;
-    }
+    } */
 }
 
 @media screen and (min-width: 993px) and (max-width: 1148px){
     /* main */
-    .hero {
+    /* .hero {
         height: 400px;
         margin-bottom: 60px;
-    }
+    } */
 
-    .first_table{
+    /* .first_table{
         display: flex;
         justify-content: flex-start;
         margin: 0 10% 42px;
@@ -61,20 +61,20 @@
     .first_table td{
         width: 354px;
         margin: 0 0 0 15px;
-    }
+    } */
 
-    .photo_ul{
+    /* .activity{
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
         margin-bottom: 30px;
     }
 
-    .photo_ul li{
+    .activity li{
         margin-right: 0;
-    }
+    } */
 
-    .team{
+    /* .team{
         margin-top: 0;
         padding: 66px 0 60px;
     }
@@ -98,9 +98,9 @@
 
     .member img{
         width: 354px;
-    }
+    } */
 
-    .clients {
+    /* .clients {
         padding: 60px;
         background: white;
         height: 280px;
@@ -118,13 +118,13 @@
 
     .clients ul div{
         width: 224px;
-    }
+    } */
 }
 
                             /* TABLET */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     /* header */
-    .web{
+    /* .web{
         color: #000;
     }
 
@@ -181,10 +181,10 @@
     .contacts a{
         font-size: 12px;
         color: #757575;
-    }
+    } */
 
     /* main */
-    .hero {
+    /* .hero {
         height: 400px;
         margin-bottom: 60px;
     }
@@ -199,9 +199,9 @@
     
     .hero button{
         margin-top: 37px;
-    }
+    } */
     
-    .first_table{
+    /* .first_table{
         display: flex;
         justify-content: flex-start;
         margin-bottom: 42px;
@@ -219,17 +219,17 @@
     
     .first_table td{
         width: 354px;
-    }
+    } */
     
-    .f_h2{
+    /* .act_h2{
         display: none;
     }
 
-    .photo_ul{
+    .activity{
         display: none;
-    }
+    } */
 
-    .team{
+    /* .team{
         margin-top: 0;
         padding: 66px 0 60px;
     }
@@ -253,9 +253,9 @@
 
     .member img{
         width: 354px;
-    }
+    } */
 
-    .clients {
+    /* .clients {
         padding: 65px 0 60px;
         background: white;
         height: 268px;
@@ -273,11 +273,18 @@
 
     .clients ul div{
         width: 224px;
-    }
+    } */
 
      /* footer */
-    footer{
+     /* top footer */
+    /* footer{
         height: 463px;
+    }
+
+    .top_footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .adress{
@@ -316,25 +323,20 @@
     
     .studio_2{
         color: #000;
-    }
+    } */
 
-    .bottom_footer{
+    /* bottom footer */
+    /* .bottom_footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .top_footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+    } */
 }  
                             /* SMARTPHONE */
 @media screen and (min-width: 480px) and (max-width: 767px){
     /* header */
-    .page-header{
+    /* .page-header{
         height: 60px;
     }
 
@@ -369,10 +371,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
+    } */
 
     /* main*/
-    .hero {
+    /* .hero {
         background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./img-page-1/header-img.png);
         margin-bottom: 60px;
         height: 400px;
@@ -386,9 +388,9 @@
         font-size: 28px;
         line-height: 40px;
         width: 360px;
-    }
+    } */
 
-    .first_table{
+    /* .first_table{
         display: flex;
         justify-content: center;
         margin-bottom: 42px;
@@ -414,17 +416,17 @@
 
     .first_table td p{
         text-align: center;
-    }
+    } */
 
-    .f_h2{
+    /* .act_h2{
         display: none;
     }
 
-    .photo_ul{
+    .activity{
         display: none;
-    }
+    } */
 
-    .team{
+    /* .team{
         margin-top: 60px;
         padding: 30px 0;
     }
@@ -449,9 +451,9 @@
 
     .member img{
         width: 450px;
-    }
+    } */
     
-    .clients {
+    /* .clients {
         height: 400px;
         padding: 60px 0;
     }
@@ -468,10 +470,11 @@
 
     .clients ul div{
         width: 208px;
-    }
+    } */
 
     /* footer */
-    footer{
+    /* top footer */
+    /* footer{
         height: 603px;
     }
 
@@ -503,19 +506,20 @@
     .media ul{
         display: flex;
         justify-content: center;
-    }
+    } */
 
-    .bottom_footer{
+    /* bottom footer */
+    /* .bottom_footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px){
     /* header */
-    .page-header{
+    /* .page-header{
         height: 60px;
     }
 
@@ -555,10 +559,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
+    } */
 
     /* main*/
-    .hero {
+    /* .hero {
         background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./img-page-1/header-img.png);
         margin-bottom: 60px;
         height: 300px;
@@ -572,9 +576,9 @@
 
     .hero button{
         width: 150px;
-    }
+    } */
 
-    .first_table{
+    /* .first_table{
         display: flex;
         justify-content: flex-start;
     }
@@ -591,17 +595,17 @@
     
     .first_table td{
         width: 270px;
-    }
+    } */
     
-    .f_h2{
+    /* .act_h2{
         display: none;
     }
 
-    .photo_ul{
+    .activity{
         display: none;
-    }
+    } */
 
-    .team{
+    /* .team{
         margin-top: 30px;
         padding: 30px 0;
     }
@@ -625,9 +629,9 @@
 
     .member img{
         width: 300px;
-    }
+    } */
 
-    .clients {
+    /* .clients {
         height: 380px;
         padding: 40px 0 30px;
         margin: 0 12%;
@@ -645,10 +649,11 @@
 
     .clients ul div{
         width: 105px;
-    }
+    } */
 
     /* footer */
-    footer{
+    /* top footer */
+    /* footer{
         height: 603px;
     }
 
@@ -680,9 +685,10 @@
     .media ul{
         display: flex;
         justify-content: center;
-    }
+    } */
 
-    .bottom_footer{
+    /* bottom footer */
+    /* .bottom_footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -695,5 +701,5 @@
 
     .d1 button{
         margin-left: 8%;
-    }
+    } */
 }

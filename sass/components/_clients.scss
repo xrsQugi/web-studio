@@ -1,0 +1,166 @@
+.clients{
+    background-color: $siteColor;
+    height: 182px;
+    padding: 94px 0;
+
+    h2{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $mainColor;
+        margin-bottom: 54px;
+    }
+}
+
+.clients ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
+    div{
+        width: 168px;
+        height: 88px;
+        border: 1px solid $IconsColor;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: border .4s ease-in-out;
+
+        &:hover{
+            border: 1px solid $accentColor;
+        }
+
+        &:hover svg{
+            fill: $accentColor;
+        }
+    }
+}
+
+.clients li{
+
+    svg{
+        fill: $IconsColor;
+        transition: fill .4s ease-in-out;
+    }
+
+    &:nth-child(1) svg{
+        width: 40px;
+        height: 50px;
+    }
+
+    &:nth-child(2) svg{
+        width: 40px;
+        height: 52px;
+    }
+
+    &:nth-child(3) svg{
+        width: 41px;
+        height: 42px;
+    }
+
+    &:nth-child(4) svg{
+        width: 79px;
+        height: 42px;
+    }
+
+    &:nth-child(5) svg{
+        width: 59px;
+        height: 47px;
+    }
+
+    &:nth-child(6) svg{
+        width: 88px;
+        height: 45px;
+    }
+}
+
+                            /* PC */
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    .clients {
+        padding: 60px;
+        height: 320px;
+
+        ul{
+            flex-wrap: wrap;
+            gap: 30px 60px;
+
+            div{
+                width: 224px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1148px){
+    .clients {
+        height: 280px;
+    }
+}
+
+                            /* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .clients {
+        padding: 65px 0 60px;
+        height: 268px;
+
+        h2{
+            font-size: 28px;
+            margin-bottom: 36px;
+        }
+
+        ul{
+            flex-wrap: wrap;
+
+            div{
+                width: 224px;
+            }
+        }
+    }
+}
+
+                            /* SMARTPHONE */
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .clients {
+        height: 400px;
+        padding: 60px 0;
+
+        h2{
+            font-size: 28px;
+            margin-bottom: 36px;
+        }
+
+        ul{
+            flex-wrap: wrap;
+
+            div{
+                width: 208px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+    .clients {
+        height: 380px;
+        padding: 40px 0 30px;
+        margin: 0 12%;
+
+        h2{
+            font-size: 28px;
+            margin-bottom: 36px;
+        }
+
+        ul{
+            flex-wrap: wrap;
+            gap: 20px;
+
+            div{
+                width: 105px;
+            }
+        }
+    }
+}

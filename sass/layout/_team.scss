@@ -1,0 +1,191 @@
+.team{
+    margin-top: 90px;
+    background-color: $backgroundColor;
+    padding: 90px 0 60px;
+}
+
+.our_team{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $mainColor;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.members{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.member{
+    width: 260px;
+    background-color: $siteColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    transition: box-shadow .3s ease-in-out;
+
+    &:hover{
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    h4{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $mainColor;
+        margin: 30px 0 10px;
+    }
+
+    p{
+        margin-bottom: 16px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $textColor;
+    }
+
+    img{
+        width: 260px;
+    }
+}
+
+.member ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    div{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        margin-right: 10px;
+        transition: background-color .4s ease-in-out;
+
+        &:hover{
+            background: $accentColor;
+        }
+    }
+}
+
+.member li{
+        div:hover svg{
+            fill: $siteColor;
+        }
+
+        svg{
+            fill: $IconsColor;
+            transition: fill .4s ease-in-out;
+        }
+
+        svg:nth-child(1) {
+            width: 20px;
+            height: 20px;
+            margin: 12px;
+        }
+
+        svg:nth-child(2){  
+            width: 20px;
+            height: 16px;
+            margin: 14px 12px;
+        }
+
+        svg:nth-child(3){  
+            width: 20px;
+            height: 20px;
+            margin: 12px;
+        }
+
+        svg:nth-child(4){
+            width: 20px;
+            height: 20px;
+            margin: 12px;
+        }
+}
+
+                    /* TABLET */    /* PC */
+@media screen and (min-width: 768px) and (max-width: 1148px){
+    .team{
+        margin-top: 0;
+        padding: 66px 0 60px;
+    }
+    
+    .our_team{
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+    
+    .members{
+        margin: 0 1.5%;
+        flex-wrap: wrap;
+
+        .member{
+            width: 354px;
+    
+            img{
+                width: 354px;
+            }
+        }
+    }
+}
+
+                            /* SMARTPHONE */
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .team{
+        margin-top: 60px;
+        padding: 30px 0;
+    }
+
+    .our_team{
+        font-size: 28px;
+        margin-bottom: 32px;
+
+    }
+    
+    .members{
+        margin: 0 1.5%;
+        flex-wrap: wrap;
+
+        .member{
+            width: 450px;
+    
+            img{
+                width: 450px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+    .team{
+        margin-top: 30px;
+        padding: 30px 0;
+    }
+
+    .our_team{
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    
+    .members{
+        margin: 0 1.5%;
+        flex-wrap: wrap;
+
+        .member{
+            width: 300px;
+
+            img{
+                width: 300px;
+            }
+        }
+    }
+}

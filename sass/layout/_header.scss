@@ -1,0 +1,167 @@
+.page-header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: 20%;
+}
+
+.icon-menu{
+    display: none;
+}
+
+.nav_2{
+    width: 35%;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: $textColor;
+        transition: color .2s ease-in-out;
+    
+        &:hover,
+        &:focus{
+            color: $accentColor;
+        }
+    }
+
+    .page-studio{
+        color: $accentColor;
+    }
+
+}
+
+.contacts{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    a{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: $textColor;
+        transition: color .2s ease-in-out;
+
+        &:hover{
+            color: $accentColor;
+        }
+    }
+
+    .envelope{
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+        fill: currentColor;
+    }
+
+    .smartphone{
+        margin-right: 10px;
+        width: 10px;
+        height: 16px;
+        fill: currentColor;
+    }
+
+    li:nth-child(1){
+        margin-right: 30px;
+    }
+}
+
+                            /* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* header */
+    nav {
+        width: 40%;
+        margin: 0 79px;
+    }
+
+    .nav_menu {
+        margin-top: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        li:not(:nth-child(3)){
+            margin-right: 56px;
+        }
+    }
+
+    .contacts{
+        flex-direction: column;
+        justify-content: flex-start;
+
+        li{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        li:nth-child(1){
+            margin-right: 0;
+            margin-bottom: 12px;
+        }
+
+        li:nth-child(2){
+            margin-right: 9px;
+        }
+
+        .envelope{
+            margin: 0 8px 0 2px;
+            width: 14px;
+            height: 10px;
+        }
+
+        .smartphone{
+            width: 10px;
+            height: 14px;
+        }
+
+        a{
+            font-size: 12px;
+            color: $textColor;
+        }
+    }
+}
+
+                            /* Smartphone */
+@media screen and (min-width: 320px) and (max-width: 767px){
+    /* header */
+    .page-header{
+        height: 60px;
+    }
+
+    .nav_menu{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .icon-menu{
+        display: flex;
+        fill: $mainColor;
+        width: 24px;
+        height: 16px;
+        transition: fill .2s ease-in-out;
+
+        &:active{
+            fill: $accentColor;
+        }
+    }
+    
+    .nav_2{
+        display: none;
+    }
+}

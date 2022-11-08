@@ -1,0 +1,165 @@
+footer{
+    background: $BottomColor;
+    height: 252px;
+
+    .top_footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+.adress{
+    margin: 60px 156px 60px 215px;
+
+    li:not(:nth-child(1)){
+        margin-top: 9px;
+    }
+
+    .email{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .tel{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .place{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: $siteColor;
+    }
+
+    h2{
+        margin-bottom: 20px;
+    }
+}
+
+.media {
+    margin: 72px 0 100px;
+
+    h4{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $siteColor;
+    }
+
+    ul{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.media li{
+    margin-right: 10px;
+
+    svg{
+        margin: 12px;
+        fill: $siteColor;
+        width: 20px;
+        height: 20px;
+    }
+
+    div{ 
+        background: rgba(255, 255, 255, 0.1);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        transition: background-color .4s ease-in-out;
+
+        &:hover{
+            background-color: $accentColor;
+        }
+    }    
+}
+
+                            /* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    footer{
+        height: 463px;
+
+        .top_footer{
+            justify-content: center;
+        }
+    }
+
+    .adress{
+        margin: 60px 178px 66px 89px;
+
+        ul{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        li:not(:nth-child(1)){
+            margin-top: 15px;
+        }
+
+        .email{
+            margin-left: 40px;
+        }
+
+        .tel{
+            margin-left: 40px;
+        }
+
+        h2{
+            margin: 0 0 32px 36px;
+        }
+    }
+
+    .media h4{
+        text-align: center;
+    }
+}
+
+                            /* SMARTPHONE */
+@media screen and (min-width: 320px) and (max-width: 767px){
+    footer{
+        height: 603px;
+
+        .top_footer{
+            flex-direction: column;
+        }
+    }
+
+    .adress{
+        margin: 60px auto;
+
+        h2{
+            text-align: center;
+        }
+
+        ul{
+            text-align: center;
+        }
+    }
+
+    .media {
+        margin: 0 0 60px;
+
+        h4{
+            text-align: center;
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
