@@ -1,0 +1,148 @@
+.table {
+    margin: 0 2% 60px;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product {
+    position: relative;
+    width: 368px;
+    height: 402px;
+    background: $siteColor;
+    border: 1px solid $siteColor;
+    transition: box-shadow .3s ease-in-out;
+
+    h4{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        color: $mainColor;
+        margin: 20px 24px 4px;
+    }
+
+    p{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color: $textColor;
+        margin: 0 24px 20px;
+    }
+
+    &:hover{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &:hover .overflow{
+        opacity: 1;
+    }
+}
+
+.overflow{
+    width: 321px;
+    height: 168px;
+    padding: 63px 24px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $siteColor;
+    position: absolute;
+    bottom: 108px;
+    background-color: $accentColor;
+    opacity: 0;
+    font-family: 'Roboto';
+    transition: opacity .3s ease-in-out;
+}
+
+                        /* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .table{
+        margin: 0 1.5% 94px;
+        width: 97%;
+    }
+    
+    .product {
+        width: 352px;
+
+        img{
+            width: 352px;
+            height: 281px;
+        }
+
+        .first-p{
+            height: 438px;
+        }
+
+        .second-p{
+            height: 438px;
+        }
+
+        .overflow{
+            padding: 63px 24px;
+            width: 304px;
+            height: 155px;
+            bottom: 121px;
+        }
+    }
+
+    .over-1, .over-2{
+        bottom: 157px;
+    }
+}
+
+                        /* SMARTPHONE */
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .product {
+        width: 448px;
+
+        img{
+            object-fit: cover;
+            width: 448px;
+            height: 292px;
+        }
+
+        .overflow{
+            padding: 77px 24px;
+            width: 400px;
+            height: 140px;
+            bottom: 109px;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+    .table {
+        margin: 0 0 60px;
+        width: 100%;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .product {
+        width: 248px;
+        height: 348px;
+
+        img{
+            width: 248px;
+            height: 198px;
+        }
+
+        .overflow{
+            padding: 10px 10px;
+            width: 228px;
+            height: 178px;
+            bottom: 150px;
+            font-size: 12px;
+        }
+    }
+}

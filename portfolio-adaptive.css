@@ -1,7 +1,7 @@
                         /* TABLET */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     /* header */
-    .web{
+    /* .web{
         color: #000;
     }
 
@@ -58,10 +58,10 @@
     .contacts a{
         font-size: 12px;
         color: #757575;
-    }
+    } */
 
     /* main*/
-    .table{
+    /* .table{
         margin: 0 1.5% 94px;
         width: 97%;
         display: flex;
@@ -97,10 +97,10 @@
     .product img{
         width: 352px;
         height: 281px;
-    }
+    } */
     
      /* footer */
-    footer{
+    /* footer{
         height: 463px;
     }
 
@@ -153,13 +153,13 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-    }
+    } */
 }
 
-/* SMARTPHONE */
+                        /* SMARTPHONE */
 @media screen and (min-width: 480px) and (max-width: 767px){
     /* header */
-    .page-header{
+    /* .page-header{
         height: 60px;
     }
 
@@ -194,17 +194,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
+    } */
 
     /* main*/
 
-    .charter{
+    /* .charter{
         width: 92%;
         margin: 60px 4% 40px;
         flex-wrap: wrap;
-    }
+    } */
 
-    .product {
+    /* .product {
         width: 448px;
     }
 
@@ -219,10 +219,10 @@
         object-fit: cover;
         width: 448px;
         height: 292px;
-    }
+    } */
 
     /* footer */
-    footer{
+    /* footer{
         height: 603px;
     }
 
@@ -261,12 +261,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px){
     /* header */
-    .page-header{
+    /* .page-header{
         height: 60px;
     }
 
@@ -306,16 +306,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
+    } */
 
     /* main*/
-    .charter{
+    /* .charter{
         width: 92%;
         margin: 60px 4% 40px;
         flex-wrap: wrap;
-    }
+    } */
 
-    .table {
+    /* .table {
         margin: 0 0 60px;
         width: 100%;
         align-content: center;
@@ -344,10 +344,10 @@
         height: 178px;
         bottom: 150px;
         font-size: 12px;
-    }
+    } */
 
     /* footer */
-    footer{
+    /* footer{
         height: 603px;
     }
 
@@ -394,5 +394,5 @@
 
     .d1 button{
         margin-left: 8%;
-    }
+    } */
 }

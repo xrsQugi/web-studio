@@ -1,4 +1,4 @@
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -112,16 +112,17 @@ nav {
 
 .nav_menu a:hover, .contacts a:hover, .nav_menu .page-portfolio{
     color: #2196F3;
-}
+} */
 
-.charter{
+/* main */
+/* .charter{
     margin: 94px 0 50px;
     display: flex;
     justify-content: center;
     gap: 8px;
-}
+} */
 
-.charter li div{
+/* .charter li div{
     padding: 6px 23px;
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -207,9 +208,9 @@ nav {
     letter-spacing: 0.03em;
     color: #757575;
     margin: 0 24px 20px;
-}
+} */
 
-footer{
+/* footer{
     background: #2F303A;
     height: 252px;
 }
@@ -388,5 +389,5 @@ input:active, :hover, :focus {
 
 .d1 button:hover svg{
     fill:#2196F3;
-}
+} */
 

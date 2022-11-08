@@ -240,7 +240,7 @@ nav {
   }
 }
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img-page-1/hero.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img-page-1/hero.png);
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -298,7 +298,7 @@ nav {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   /* main*/
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img-page-1/header-img.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img-page-1/header-img.png);
     margin-bottom: 60px;
     height: 400px;
   }
@@ -315,7 +315,7 @@ nav {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   /* main*/
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img-page-1/header-img.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img-page-1/header-img.png);
     margin-bottom: 60px;
     height: 300px;
   }
@@ -1099,5 +1099,180 @@ footer .top_footer {
   }
   .d1 button {
     margin-left: 8%;
+  }
+}
+.charter {
+  margin: 94px 0 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.charter a {
+  color: #212121;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.charter li div {
+  padding: 6px 23px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+.charter li div:hover {
+  background-color: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.charter li div:hover a {
+  color: #FFFFFF;
+}
+
+/* SMARTPHONE */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .charter {
+    width: 92%;
+    margin: 60px 4% 40px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .charter {
+    width: 92%;
+    margin: 60px 4% 40px;
+    flex-wrap: wrap;
+  }
+}
+.table {
+  margin: 0 2% 60px;
+  width: 96%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product {
+  position: relative;
+  width: 368px;
+  height: 402px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.product h4 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin: 20px 24px 4px;
+}
+.product p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin: 0 24px 20px;
+}
+.product:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.product:hover .overflow {
+  opacity: 1;
+}
+
+.overflow {
+  width: 321px;
+  height: 168px;
+  padding: 63px 24px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 108px;
+  background-color: #2196F3;
+  opacity: 0;
+  font-family: "Roboto";
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .table {
+    margin: 0 1.5% 94px;
+    width: 97%;
+  }
+  .product {
+    width: 352px;
+  }
+  .product img {
+    width: 352px;
+    height: 281px;
+  }
+  .product .first-p {
+    height: 438px;
+  }
+  .product .second-p {
+    height: 438px;
+  }
+  .product .overflow {
+    padding: 63px 24px;
+    width: 304px;
+    height: 155px;
+    bottom: 121px;
+  }
+  .over-1, .over-2 {
+    bottom: 157px;
+  }
+}
+/* SMARTPHONE */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .product {
+    width: 448px;
+  }
+  .product img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 448px;
+    height: 292px;
+  }
+  .product .overflow {
+    padding: 77px 24px;
+    width: 400px;
+    height: 140px;
+    bottom: 109px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .table {
+    margin: 0 0 60px;
+    width: 100%;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .product {
+    width: 248px;
+    height: 348px;
+  }
+  .product img {
+    width: 248px;
+    height: 198px;
+  }
+  .product .overflow {
+    padding: 10px 10px;
+    width: 228px;
+    height: 178px;
+    bottom: 150px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=main.css.map */
