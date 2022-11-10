@@ -222,20 +222,14 @@ nav {
   justify-content: space-evenly;
 }
 
-/* Laptop */
+/* Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .container {
     justify-content: flex-start;
   }
 }
 /* Smartphone */
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-    padding: 16px;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     padding: 16px;
     justify-content: space-between;
@@ -1130,14 +1124,7 @@ footer .top_footer {
 }
 
 /* SMARTPHONE */
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .charter {
-    width: 92%;
-    margin: 60px 4% 40px;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .charter {
     width: 92%;
     margin: 60px 4% 40px;
