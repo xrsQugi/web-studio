@@ -1,14 +1,14 @@
+//! ----------- Base -----------
 @import "./base/reset";
 @import "./utils/colors";
-@import "./components/logo";
+@import "./base/wrapper";
+
+//! ----------- Header -----------
 @import "./layout/header";
-@import "./components/container";
+
+//! ----------- Main -----------
 @import "./components/hero";
-@import "./components/table";
-@import "./components/activity";
-@import "./layout/team";
-@import "./components/clients";
-@import "./layout/top-footer";
-@import "./layout/bottom-footer";
-@import "./components/charter";
-@import "./components/cards-set";
+
+
+//! ----------- Modal -----------
+@import "./components/modal";

@@ -1,97 +1,86 @@
-.hero {
-    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img-page-1/hero.jpg);
-    background-size: cover;
+.hero{
+    margin-top: 62px;
+    background-image: url(../photos-studio/hero-computer.png);
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 90px;
     
-    p{
-        font-family: 'Roboto';
-        font-weight: 900;
-        font-size: 44px;
-        letter-spacing: 0.06em;
-        line-height: 60px;
-        text-align: center;
-        text-transform: uppercase;
-        color: $siteColor;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    h1{
         width: 700px;
-    }
-
-    a{
-        font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 16px;
         color: $siteColor;
-        transition: color .4s ease-in-out;
+        text-align: center;
+        font-size: 44px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 60px;
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
     }
-}
 
-.hero button{
-    margin-top: 40px;
-    width: 200px;
-    height: 50px;
-    background-color: $accentColor;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    transition: background-color .4s ease-in-out;
+    button{
+        border: 1px solid $accentColor;
+        border-radius: 4px;
+        background-color: $accentColor;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 10px 24px;
+        color: $siteColor;
+        text-align: center;
+        font-size: 16px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
 
-    &:hover,
-    &:active{
-        background-color: $siteColor;
-    }
-    &:hover a{
-        color: $accentColor;
-    }
-}
-
-                            /* PC */
-@media screen and (min-width: 993px) and (max-width: 1148px){
-    /* main */
-    .hero {
-        height: 400px;
-        margin-bottom: 60px;
-    }
-}
-
-                            /* Laptop */
-@media screen and (min-width: 480px) and (max-width: 767px){
-    /* main*/
-    .hero {
-        margin-bottom: 60px;
-        height: 400px;
-
-        p{
-            font-size: 28px;
-            line-height: 40px;
-            width: 360px;
-        }
-
-        button{
-            width: 200px;
+        &:hover, &:active{
+            background-color: $siteColor;
+            color: $accentColor;
         }
     }
 }
 
-                            /* Smartphone */
-@media screen and (min-width: 320px) and (max-width: 479px){
-    /* main*/
-    .hero {
-        margin-bottom: 60px;
-        height: 300px;
+//! ----------- Tablet -----------
+@media screen and (max-width: 768px){
+    .hero{
+        background-image: url(../photos-studio/hero-tablet.png);
+        height: 400px;
+        
 
-        p{
-            font-size: 20px;
+        h1{
+            width: 310px;
+            font-size: 24px;
             line-height: 30px;
-            width: 260px;
         }
+    }
+}
 
-        button{
-            width: 150px;
+//! ----------- Smartphone -----------
+@media screen and (max-width: 480px){
+    .hero{
+        background-image: url(../photos-studio/hero-smartphone.png);
+        height: 400px;
+        
+
+        h1{
+            width: 360px;
+            font-size: 26px;
+            line-height: 30px;
         }
     }
 }
