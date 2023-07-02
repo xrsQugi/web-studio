@@ -45,11 +45,11 @@ modal.addEventListener('click', event => {
 });
 
 //!----------------------
-const form = document.querySelector(".modal-form");
+const formModal = document.querySelector(".modal-form");
 
-form.addEventListener("submit", handleSubmit);
+formModal.addEventListener("submit", handleSubmitModal);
 
-function handleSubmit(event) {
+function handleSubmitModal(event) {
   	event.preventDefault();
   	const {
     	elements: { name, tel, email, message }
@@ -75,6 +75,27 @@ function handleSubmit(event) {
 	}
 }
 
+//!----------------------
+const formFooter = document.querySelector(".footer-form-email");
+
+formFooter.addEventListener("submit", handleSubmitFooter);
+
+function handleSubmitFooter(event) {
+  	event.preventDefault();
+  	const {
+    	elements: {email}
+  	} = event.currentTarget;
+
+	if (email.value === "") {
+		return alert("Заповніть поле пошти");
+	} else{
+		console.log(`
+			Email: ${email.value}, 
+		`);
+		alert(`Перевірте пошту ${email.value}`);
+  		event.currentTarget.reset();
+	}
+}
 
 // document.addEventListener('DOMContentLoaded', function () {
 // 	const form = document.getElementById("modal-form")

@@ -1,0 +1,294 @@
+footer{
+    background-color: $footerColor;
+
+    .container{
+        padding: 60px 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 70px;
+        justify-content: flex-start;
+    }
+}
+
+// Блок 1
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .logo-footer{
+        font-size: 26px;
+        // font-size: 14px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px;
+        
+        .web{
+            color: $accentColor;
+        }
+    
+        .studio{
+            color: $siteColor;
+        }
+    }
+}
+
+.footer-contacts-text{
+    display: flex;
+    flex-direction: column;
+
+    .location{
+        color: $siteColor;
+        font-size: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+    }
+
+    a{
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+    }
+}
+
+// Блок 2
+.footer-media{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // padding-top: 14px;
+
+    p{
+        color: $siteColor;
+        // font-size: 14px;
+        font-size: 26px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+}
+
+.footer-media-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: background-color .4s ease-in-out;
+
+        &:hover{
+            background-color: $accentColor;
+        }
+
+        &:hover svg{
+            fill: $siteColor;
+        }
+    }
+
+    svg {
+        fill: $IconsColor;
+        width: 20px;
+        height: 20px;
+        transition: fill .4s ease-in-out;
+    }
+}
+
+// Блок 3
+.footer-form{
+    display: none;
+}
+
+// Блок 3
+.footer-form{
+    display: none;
+    gap: 20px;
+
+    p{
+        color: $siteColor;
+        font-size: 14px;
+        // font-size: 26px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+}
+
+.footer-form-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+    
+    input{
+        width: 90%;
+        background-color: transparent;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color:  rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        padding: 15px 16px;
+
+        &:focus {
+            border: 1px solid $accentColor;
+            outline: 0;
+        }
+    }
+
+    button{
+        border: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background-color: $accentColor;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 10px 24px;
+        color: $siteColor;
+        text-align: center;
+        font-size: 16px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    
+        &:hover, &:active{
+            background-color: $siteColor;
+            color: $accentColor;
+        }
+    
+        &:hover svg{
+            fill: $accentColor;
+        }
+    }
+
+    svg{
+        width: 24px;
+        height: 24px;
+        fill: $siteColor;
+        margin-left: 13px;
+        transition: fill .3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 890px){
+    footer .container{
+        gap: 70px 100px ;
+        justify-content: center;
+    }
+
+    // Блок 1
+    .footer-contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .logo-footer{
+            font-size: 26px;
+            // font-size: 14px;
+            
+            .web, .studio{
+                color: $mainColor;
+            }
+        }
+    }
+    
+    // Блок 3
+    .footer-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 583px){
+    footer .container{
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 542px){
+    //Блок 1
+    .footer-contacts{
+        align-items: center;
+    }
+
+    // Блок 2
+    .footer-media{
+        align-items: center  ;
+    }
+
+    // Блок 3
+    .footer-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footer-contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .logo-footer{
+            font-size: 26px;
+            // font-size: 14px;
+            
+            .web{
+                color: $accentColor;
+            }
+        
+            .studio{
+                color: $siteColor;
+            }
+        }
+    }
+
+    // Блок 3
+    .footer-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-form-email{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footer-form-email{
+        width: 250px;
+    }
+}

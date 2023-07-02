@@ -17,7 +17,7 @@
         <header>
             <div class="container">
                 <div class="header-nav">
-                    <a href="#" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
+                    <a href="#" class="logo-header"><span class="web">Web</span><span class="studio">Studio</span></a>
                     <div class="header-nav-item">
                         <a href="./index.html" active>Студія</a>
                         <a href="./portfolio.html">Портфоліо</a>
@@ -216,22 +216,32 @@
         <footer>
             <div class="container">
                 <div class="footer-contacts">
-                    <a href="#" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
+                    <a href="#" class="logo-footer"><span class="web">Web</span><span class="studio">Studio</span></a>
                     <div class="footer-contacts-text">
-                        <a href="">м. Київ, пр-т Лесі Українки, 26</a>
+                        <a href="" class="location">м. Київ, пр-т Лесі Українки, 26</a>
                         <a href="mailto:info@devstudio.com">info@devstudio.com</a>
                         <a href="tel: +38 096 111 11 11">+38 096 111 11 11</a>
                     </div>
                 </div>
                 <div class="footer-media">
-                    <a href="#"><svg><use href="./symbol-defs.svg#icon-instagram"></use></svg></a>
-                                <a href="#"><svg><use href="./symbol-defs.svg#icon-telegram"></use></svg></a>
-                                <a href="#"><svg><use href="./symbol-defs.svg#icon-github"></use></svg></a>
+                    <p>Приєднуйтесь</p>
+                    <div class="footer-media-icons">
+                        <a href="#"><svg><use href="./symbol-defs.svg#icon-instagram"></use></svg></a>
+                        <a href="#"><svg><use href="./symbol-defs.svg#icon-telegram"></use></svg></a>
+                        <a href="#"><svg><use href="./symbol-defs.svg#icon-github"></use></svg></a>
+                    </div>
                 </div>
-                <div class="footer-media">
-                    <form>
-                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" placeholder="E-mail">
-                        <button type="submit">Підписатися <svg><use href="./symbol-defs.svg#icon-send"></use></svg></button>
+                <div class="footer-form">
+                    <p>Підпишіться на розсилку</p>
+                    <form class="footer-form-email">
+                        <input 
+                            name="email" 
+                            class="" 
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}"
+                            required
+                            placeholder="E-mail"
+                        >
+                        <button type="submit" class="subscribe-btn">Підписатися <svg><use href="./symbol-defs.svg#icon-send"></use></svg></button>
                     </form>
                 </div>
             </div>

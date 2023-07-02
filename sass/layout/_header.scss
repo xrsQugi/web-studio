@@ -24,7 +24,7 @@ header{
     gap: 80px;
 }
 
-.logo{
+.logo-header{
     font-size: 26px;
     font-family: Raleway;
     font-style: normal;
@@ -108,7 +108,7 @@ header{
         gap: 10px;
     }
     
-    .logo{
+    .logo-header{
         font-size: 24px;
         
         .web, .studio{
@@ -309,7 +309,7 @@ header{
 }
 
 @media screen and (max-width: 480px){
-    .logo{
+    .logo-header{
         font-size: 24px;
         
         .web{
