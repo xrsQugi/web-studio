@@ -6,6 +6,9 @@
 }
 
 main{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
     flex-grow: 1;
 }
 

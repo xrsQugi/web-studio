@@ -32,6 +32,9 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
   flex-grow: 1;
 }
 
@@ -384,6 +387,70 @@ header .container {
     line-height: 30px;
   }
 }
+@media screen and (max-width: 424px) {
+  .hero h1 {
+    width: 300px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .hero h1 {
+    width: 250px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+.benefits .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.benefits-item-icon {
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+.benefits-item-icon svg {
+  width: 70px;
+  height: 70px;
+}
+
+.benefits-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.benefits-item-text h4 {
+  color: #212121;
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.benefits-item-text p {
+  color: #757575;
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -411,7 +478,7 @@ header .container {
   z-index: 1;
   margin: 30px 15px;
   transform: scale(0);
-  transition: transform 0.8s;
+  transition: transform 0.8s ease-in-out;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -517,9 +584,6 @@ header .container {
 }
 .form-item input:focus, .form-item textarea:focus {
   border: 1px solid #2196F3;
-}
-.form-item input._error {
-  box-shadow: 0 0 5px red;
 }
 .form-item textarea {
   resize: vertical;

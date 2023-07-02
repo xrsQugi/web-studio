@@ -26,7 +26,7 @@
     z-index: 1;
     margin: 30px 15px;
     transform: scale(0);
-    transition: transform .8s;
+    transition: transform .8s ease-in-out;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -140,10 +140,6 @@
 
     input:focus, textarea:focus{
         border: 1px solid $accentColor;
-    }
-
-    input._error{
-        box-shadow: 0 0 5px red;
     }
 
     textarea{

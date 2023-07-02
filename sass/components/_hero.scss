@@ -84,3 +84,19 @@
         }
     }
 }
+
+@media screen and (max-width: 424px){
+    .hero h1{
+        width: 300px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 374px){
+    .hero h1{
+        width: 250px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
