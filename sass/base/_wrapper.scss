@@ -12,6 +12,12 @@ main{
     flex-grow: 1;
 }
 
+@media (max-width: 769px){
+    main{
+        gap: 60px;
+    }
+}
+
 .container{
     max-width: 70rem;
     margin: 0 auto;

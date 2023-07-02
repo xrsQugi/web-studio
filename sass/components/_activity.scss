@@ -1,0 +1,66 @@
+
+.activity .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    h3{
+        color: $mainColor;
+        text-align: center;
+        font-size: 36px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.08px;
+    }
+}
+
+.activity-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.activity-item {
+    position: relative;
+    width: 1fr;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .overflow-act{   
+        opacity: 0;
+        position: absolute;
+        top: 70%;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity .4s ease-in-out;
+        background: rgba(47, 48, 58, 0.8);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $siteColor;
+    }
+
+    &:hover .overflow-act{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px){
+    .activity .container{
+        display: none;
+    }
+}

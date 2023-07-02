@@ -96,7 +96,7 @@ header{
     }
 }
 
-.menu{
+.menu, .menu-btn{
     display: none;
 }
 
@@ -160,6 +160,7 @@ header{
 
     /* Гамбургер иконка */
     .menu-btn {
+        display: block;
         width: 30px;
         height: 30px;
         position: relative;
