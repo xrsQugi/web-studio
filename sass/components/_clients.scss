@@ -1,0 +1,107 @@
+.clients{
+    background-color: $siteColor;
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 90px;
+
+        h3{
+            color: $mainColor;
+            text-align: center;
+            font-size: 36px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.08px;
+        }
+    }
+}
+
+.clients-list{
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    gap: 30px;
+}
+
+.clietns-item{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $IconsColor;
+
+    svg{
+        fill: $IconsColor;
+        height: 50px;
+    }
+}
+
+@media (max-width: 1001px){
+    .clients-list{
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 951px){
+    .clients .container h3{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .clients-list{
+        display: grid;
+        grid-template-columns: repeat(2, 220px);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 601px){
+    .clients .container h3{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 481px){
+
+    .clients .container h3{
+        font-size: 26px;
+    }
+    
+    .clients-list{
+        display: grid;
+        grid-template-columns: repeat(2, 140px);
+        gap: 20px;
+    }
+    
+    .clietns-item{
+        padding: 10px 0;
+    
+        svg{
+            height: 40px;
+        }
+    }
+}
+
+@media (max-width: 360px){
+    .clients-list{
+        display: grid;
+        grid-template-columns: repeat(2, 120px);
+        gap: 20px;
+    }
+    
+    .clietns-item{
+        padding: 10px 0;
+    
+        svg{
+            height: 30px;
+        }
+    }
+}

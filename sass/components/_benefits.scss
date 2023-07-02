@@ -1,4 +1,25 @@
-.benefits .container{
+.benefits{
+    background-color: $siteColor;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        
+        h3{
+            color: $mainColor;
+            text-align: center;
+            font-size: 36px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.08px;
+        }
+    }
+} 
+
+.benefits-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -52,13 +73,29 @@
 }
 
 @media (max-width: 1000px){
-    .benefits .container{
+    .benefits-list{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+@media (max-width: 951px){
+    .benefits .container h3{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 601px){
+    .clients .container h3{
+        font-size: 26px;
+    }
+}
+
 @media (max-width: 481px){
-    .benefits .container{
+    .benefits .container h3{
+        font-size: 26px;
+    }
+
+    .benefits-list{
         grid-template-columns: repeat(1, 1fr);
     }
 }
