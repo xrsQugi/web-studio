@@ -19,6 +19,8 @@ ul {
   margin: 0;
 }
 
-body{
+html, body{
     margin: 0;
+    height: 100%;
+    scroll-behavior: smooth;
 }
