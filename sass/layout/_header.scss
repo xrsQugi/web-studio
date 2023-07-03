@@ -7,6 +7,7 @@ header{
     left: 0;
     width: 100%;
     z-index: 10;
+    border-bottom: 1px solid $lineColor;
 
     .container{
         display: flex;
@@ -55,8 +56,12 @@ header{
         letter-spacing: 0.28px;
         transition: color .3s ease-in-out;
 
-        &:hover, &[active]{
+        &[active]{
             color: $accentColor;
+        }
+
+        &:hover{
+            color: $textColor;
         }
     }
 }
@@ -101,7 +106,7 @@ header{
 }
 
 //! ----------- Tablet -----------
-@media screen and (max-width: 890px){
+@media screen and (max-width: 1000px){
     .header-contacts{
         display: flex;
         flex-direction: column;
@@ -135,18 +140,24 @@ header{
                 display: block;
                 position: absolute;
                 top: 2.7rem;
+                background-color: $textColor;
                 border-radius: 4px;
                 left: 0; 
                 width: 0;
                 height: 4px;
-                background-color: $accentColor;
                 content: "";
-                transition: width 0.3s ease-out; 
+                transition: all .3s ease-out; 
             }
 
             &:hover:after,
             &:focus:after, &[active]:after {
+                background-color: $accentColor;
                 width: 100%;
+            }
+
+            &:hover:after,
+            &:focus:after{
+                background-color: $textColor;
             }
         }
     }

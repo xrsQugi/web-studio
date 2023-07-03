@@ -1,5 +1,6 @@
-"use strict"
+"use strict";
 
+//! ----------- Burger -----------
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
 
@@ -8,12 +9,13 @@ menuBtn.addEventListener('click', function(){
 	menu.classList.toggle('active');
 })
 
-const openModal = document.querySelector('#open-modal-btn')
+//! ----------- Modal -----------
+const openModal = document.querySelector('#open-modal-btn');
 const modal = document.querySelector('#my-modal');
 const closeModal = document.querySelectorAll("#close-my-modal-btn");
 // Открыть модальное окно
-document.getElementById("open-modal-btn").addEventListener("click", function() {
-    document.getElementById("my-modal").classList.add("open")
+openModal.addEventListener("click", function() {
+    modal.classList.add("open")
 })
 
 // Закрыть модальное окно
@@ -44,7 +46,7 @@ modal.addEventListener('click', event => {
     event.currentTarget.classList.remove('open');
 });
 
-//!----------------------
+//! ----------- Modal form -----------
 const formModal = document.querySelector(".modal-form");
 
 formModal.addEventListener("submit", handleSubmitModal);
@@ -75,7 +77,7 @@ function handleSubmitModal(event) {
 	}
 }
 
-//!----------------------
+//! ----------- Footer form -----------
 const formFooter = document.querySelector(".footer-form-email");
 
 formFooter.addEventListener("submit", handleSubmitFooter);
@@ -96,6 +98,7 @@ function handleSubmitFooter(event) {
   		event.currentTarget.reset();
 	}
 }
+
 
 // document.addEventListener('DOMContentLoaded', function () {
 // 	const form = document.getElementById("modal-form")
