@@ -55,14 +55,15 @@ header{
         line-height: normal;
         letter-spacing: 0.28px;
         transition: color .3s ease-in-out;
-
+        
+        &:hover{
+            color: $textColor;
+        }
+        
         &[active]{
             color: $accentColor;
         }
 
-        &:hover{
-            color: $textColor;
-        }
     }
 }
 
@@ -158,6 +159,10 @@ header{
             &:hover:after,
             &:focus:after{
                 background-color: $textColor;
+            }
+
+            &[active]:hover:after{
+                background-color: $accentColor;
             }
         }
     }
