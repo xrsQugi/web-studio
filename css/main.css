@@ -1342,6 +1342,7 @@ footer .container {
 }
 
 .product {
+  position: relative;
   border: 1px solid #ECECEC;
   background-color: #FFFFFF;
   display: flex;

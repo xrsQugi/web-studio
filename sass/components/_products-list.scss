@@ -7,6 +7,7 @@
 }
 
 .product{
+    position: relative;
     border: 1px solid $lineColor;
     background-color: $siteColor;
     display: flex; 
