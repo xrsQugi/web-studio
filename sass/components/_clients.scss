@@ -32,11 +32,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
     border: 1px solid $IconsColor;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        border: 1px solid #2196F3;
+    }
 
     svg{
         fill: $IconsColor;
         height: 50px;
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover svg{
+        fill: #2196F3;
     }
 }
 

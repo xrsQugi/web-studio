@@ -781,11 +781,20 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
   border: 1px solid #AFB1B8;
+  transition: all 0.3s ease-in-out;
+}
+.clietns-item:hover {
+  border: 1px solid #2196F3;
 }
 .clietns-item svg {
   fill: #AFB1B8;
   height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.clietns-item:hover svg {
+  fill: #2196F3;
 }
 
 @media (max-width: 1001px) {
@@ -1343,6 +1352,7 @@ footer .container {
 
 .product {
   position: relative;
+  width: 300px;
   border: 1px solid #ECECEC;
   background-color: #FFFFFF;
   display: flex;
@@ -1416,6 +1426,9 @@ footer .container {
     grid-template-columns: repeat(1, 400px);
     margin-bottom: 60px;
   }
+  .product {
+    width: 400px;
+  }
   .product .product-overflow {
     height: 240px;
     width: 358px;
@@ -1430,6 +1443,9 @@ footer .container {
     grid-template-columns: repeat(1, 300px);
     margin-bottom: 60px;
   }
+  .product {
+    width: 300px;
+  }
   .product .product-overflow {
     height: 160px;
     width: 258px;
@@ -1443,6 +1459,9 @@ footer .container {
   .products-list .container {
     grid-template-columns: repeat(1, 240px);
     margin-bottom: 60px;
+  }
+  .product {
+    width: 240px;
   }
   .product .product-overflow {
     padding: 20px;

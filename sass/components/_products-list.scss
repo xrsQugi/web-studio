@@ -8,6 +8,7 @@
 
 .product{
     position: relative;
+    width: 300px;
     border: 1px solid $lineColor;
     background-color: $siteColor;
     display: flex; 
@@ -90,7 +91,8 @@
     }
 
     .product{
-    
+        width: 400px;
+
         .product-overflow{
             height: 240px;
             width: 358px;
@@ -110,6 +112,8 @@
     }
 
     .product{
+        width: 300px;
+
         .product-overflow{
             height: 160px;
             width: 258px;
@@ -129,6 +133,8 @@
     }
 
     .product{
+        width: 240px;
+        
         .product-overflow{
             padding: 20px;
             height: 152px;
