@@ -1370,7 +1370,7 @@ footer .container {
 .product .product-overflow {
   opacity: 0;
   height: 160px;
-  width: 258px;
+  width: 260px;
   position: absolute;
   padding: 40px 20px;
   font-family: "Roboto";
@@ -1431,7 +1431,7 @@ footer .container {
   }
   .product .product-overflow {
     height: 240px;
-    width: 358px;
+    width: 360px;
   }
   .product img {
     width: 100%;
@@ -1448,7 +1448,7 @@ footer .container {
   }
   .product .product-overflow {
     height: 160px;
-    width: 258px;
+    width: 260px;
   }
   .product img {
     width: 100%;
@@ -1466,7 +1466,7 @@ footer .container {
   .product .product-overflow {
     padding: 20px;
     height: 152px;
-    width: 198px;
+    width: 200px;
   }
   .product img {
     width: 100%;
