@@ -61,7 +61,7 @@ list.addEventListener('click', event => {
 
     items.forEach(item => {
         // item.classList.remove('hide');
-        item.style.display='block';
+        item.style.display='flex';
            
         if(!item.classList.contains(targetId) && targetId !== "all"){
             item.style.display='none';
